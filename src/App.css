@@ -1,0 +1,87 @@
+/*reset*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*variaveis de cores*/
+:root {
+  --cor-fundo: rgb(0, 0, 0);
+  --cor-cartao: rgb(218, 215, 5);
+  --cor-botao:rgb(93, 80, 80,0.7);
+  --sombra-cartao:rgba(255, 251, 6, 0.418);
+  --cor-fundo-tabela: rgb(255, 255, 255);
+  
+}
+
+/*fundo*/
+body{
+  background-color: var(--cor-fundo);
+}
+
+
+/*cartão*/
+#container{
+  width:27%;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--cor-cartao);
+  transition: box-shadow 1s;
+  
+}
+
+#container h1{
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#container:hover{
+  box-shadow: 0 0 10px 10px var(--sombra-cartao);
+
+}
+#divinput{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+input{
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+}
+button{
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 1s;
+
+}
+button:hover{
+  background-color: var(--cor-botao);
+}
+#divresultado{
+  font-size: 25px;
+  font-weight: bold;
+}
+table{
+  margin-top: 10px;
+  background-color: var(--cor-fundo-tabela);
+  border-radius: 10px;
+}
